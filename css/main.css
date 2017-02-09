@@ -3,9 +3,6 @@ html,body,.Page-Content{
     height: 100%;
     padding:0;
 }
-*{
-    width: 80%;
-}
 .hero{
     height:25px;
     overflow: hidden;
@@ -33,7 +30,7 @@ html,body,.Page-Content{
     position: absolute;
     height: 300px;
     background-color: white;
-    background-image: url('/pics/ShieldLogo.png');
+    background-image: url(/pics/ShieldLogo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -158,7 +155,7 @@ a{
     position: absolute;
     margin: auto;
     text-align: center;
-    background-image: url('/pics/ShieldLogo.png');
+    background-image: url(/pics/ShieldLogo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
