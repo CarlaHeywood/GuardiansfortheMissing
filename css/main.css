@@ -1,0 +1,204 @@
+html,body,.Page-Content{
+    margin: 0;
+    height: 100%;
+    padding:0;
+}
+.hero{
+    height:25px;
+    overflow: hidden;
+}
+.navBar{
+    margin: auto;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 100;
+    position: fixed;
+    width: 50%;
+    height: 44px;
+    background-color: #A1887F;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
+    -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
+}
+.logo{
+    top:44px;
+    left:0;
+    right:0;
+    margin: auto;
+    position: absolute;
+    height: 300px;
+    background-color: white;
+    background-image: url("/pics/ShieldLogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+}
+.name{
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    top:120px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+}
+.menuOptions{
+    display: block;
+    list-style: none;
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+li{
+  display: inline-block;
+  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+.CurrentEvents, .ContactUs, .noFacebook, .OurMedia{
+    margin: auto;
+    height:44px;
+    width:500px;
+    background-color: #A1887F;
+}
+#Home{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #EFEBE9;
+    display: block;
+}
+#About{
+    height: 110%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+#Contact{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #EFEBE9;
+}
+.contactForm{
+    background-color: white;
+    margin:auto;
+    height: 500px;
+    width: 500px;
+}
+#Media{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #BCAAA4;
+}
+.photoAlbum{
+  margin: auto;
+  background-color: white;
+  height:500px;
+  width:500px;
+}
+.statement{
+    padding:25px;
+    font-size: 10px;
+}
+.fb-page{
+    position:relative;
+}
+.page{
+    top:344px;
+    width:50%;
+    height:100vh;
+    margin: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+.pic{
+    top:50px;
+    left:44px;
+    position:relative;
+    height:250px;
+    width:250px;
+    background-color: white;
+}
+#Alison, #Donna, #Derek{
+    margin:0;
+    display: flex;
+}
+#Alison{
+    background-color: #D7CCC8;
+}
+#Donna{
+    height:344px;
+    background-color: #BCAAA4;
+}
+#Derek{
+    height: 400px;
+    background-color: #D7CCC8;
+}
+.parent{
+    margin:auto;
+    height:160px;
+    overflow: hidden;
+}
+.missionStatement{
+    height:160px;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    background-image: url("/pics/ShieldLogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+}
+.description{
+    padding-left:105px;
+    margin:0 auto;
+    position:relative;
+    width:40%;
+    text-align: justify;
+}
+.moveDown{
+    position:relative;
+    top: 44px;
+}
+@media only screen and (max-width: 1080px) {
+    .page{
+        position: relative;
+        width:100%;
+        background-color: black;
+        height:auto;
+      min-height: 100%;
+    }
+    .name{
+      width:100%;
+    }
+    .menuOptions{
+      margin: 0 auto;
+      position: relative;
+      left: 7%;
+  }
+    li{
+      display: inline-block;
+      padding: 10px;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+    .logo{
+      width:100%;
+    }
+    .navBar{
+      width:100%;
+      height: 44px;
+    }
+}
