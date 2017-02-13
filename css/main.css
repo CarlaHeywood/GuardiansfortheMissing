@@ -16,7 +16,7 @@ html,body,.Page-Content{
     position: fixed;
     width: 70%;
     height: 44px;
-    background-color: #A1887F;
+    background-color: #C6DDF0;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
     -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
     -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
@@ -71,12 +71,12 @@ a{
     margin: auto;
     height:44px;
     width:500px;
-    background-color: #A1887F;
+    background-color: #C6DDF0;
 }
 #Home{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    background-color: #EFEBE9;
+    background-color: #F4F8FC;
     display: block;
 }
 #About{
@@ -87,7 +87,7 @@ a{
 #Contact{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    background-color: #EFEBE9;
+    background-color: #F4F8FC;
 }
 .contactForm{
     background-color: white;
@@ -98,7 +98,7 @@ a{
 #Media{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    background-color: #BCAAA4;
+    background-color: #A3B5C5;
 }
 .photoAlbum{
   margin: auto;
@@ -135,15 +135,15 @@ a{
     display: flex;
 }
 #Alison{
-    background-color: #D7CCC8;
+    background-color: #F4F8FC;
 }
 #Donna{
     height:344px;
-    background-color: #BCAAA4;
+    background-color: #A3B5C5;
 }
 #Derek{
     height: 400px;
-    background-color: #D7CCC8;
+    background-color: #F4F8FC;
 }
 .parent{
     margin:auto;
