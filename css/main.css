@@ -3,6 +3,9 @@ html,body,.Page-Content{
     height: 100%;
     padding:0;
 }
+*{
+  text-decoration: none;
+}
 .hero{
     height:25px;
     overflow: hidden;
@@ -14,8 +17,7 @@ html,body,.Page-Content{
     margin: auto;
     position: absolute;
     height: 300px;
-    background-color: white;
-    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/master/ShieldLogo.png');
+    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -38,6 +40,7 @@ html,body,.Page-Content{
     text-align: center;
     padding:0;
     margin:0 auto;
+    color:black;
 }
 .CurrentEvents, .ContactUs, .noFacebook, .OurMedia{
     margin: auto;
@@ -127,7 +130,7 @@ html,body,.Page-Content{
     position: absolute;
     margin: auto;
     text-align: center;
-    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/master/ShieldLogo.png');
+    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -154,18 +157,36 @@ html,body,.Page-Content{
         background-color: black;
         height: auto;
         min-height: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .fb-page{
-      data-height: auto;
+      data-height: 500px;
     }
-    .logo{
-      background-image: image("/pics/ShieldLogoMobile.png");
+    .mobile{
+      top:44px;
+      left:0;
+      right:0;
+      position: fixed;
+      margin: auto;
+      height: 300px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+      width: 70%;
+      background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogoMobile.png');
     }
-    .name{
+    .hero{
+      margin: 0;
+      height:100%;
+      width:100%;
+      position: fixed;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: contain;
+    }
+    .logo, .name{
+      background-image: none;
+      background-color: transparent;
       color: transparent;
     }
     .menuOptions{
@@ -173,7 +194,10 @@ html,body,.Page-Content{
       position: relative;
       left: 7%;
     }
-    .logo{
-      width:100%;
+    #About{
+      overflow-y: scroll;
+    }
+    .moveDown{
+      top:0;
     }
 }
