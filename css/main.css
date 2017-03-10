@@ -7,21 +7,6 @@ html,body,.Page-Content{
     height:25px;
     overflow: hidden;
 }
-.navBar{
-    margin: auto;
-    top:0;
-    right:0;
-    left:0;
-    z-index: 100;
-    position: fixed;
-    width: 70%;
-    height: 44px;
-    background-color: #C6DDF0;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
-    -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
-    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
-    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
-}
 .logo{
     top:44px;
     left:0;
@@ -30,7 +15,7 @@ html,body,.Page-Content{
     position: absolute;
     height: 300px;
     background-color: white;
-    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/master/pics/ShieldLogo.png');
+    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/master/ShieldLogo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -52,20 +37,7 @@ html,body,.Page-Content{
     list-style: none;
     text-align: center;
     padding:0;
-    margin:0;
-}
-li{
-  display: inline-block;
-  padding: 10px;
-  padding-right: 25px;
-  padding-left: 25px;
-}
-a{
-  text-decoration: none;
-  color: black;
-  display: block;
-  font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
+    margin:0 auto;
 }
 .CurrentEvents, .ContactUs, .noFacebook, .OurMedia{
     margin: auto;
@@ -155,7 +127,7 @@ a{
     position: absolute;
     margin: auto;
     text-align: center;
-    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/master/pics/ShieldLogo.png');
+    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/master/ShieldLogo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -173,32 +145,35 @@ a{
     top: 44px;
 }
 @media only screen and (max-width: 1080px) {
+    .CurrentEvents, .ContactUs, .noFacebook, .OurMedia{
+      width:100%;
+    }
     .page{
         position: relative;
         width:100%;
         background-color: black;
-        height:auto;
-      min-height: 100%;
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+    }
+    .fb-page{
+      data-height: auto;
+    }
+    .logo{
+      background-image: image("/pics/ShieldLogoMobile.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
     .name{
-      width:100%;
+      color: transparent;
     }
     .menuOptions{
       margin: 0 auto;
       position: relative;
       left: 7%;
-  }
-    li{
-      display: inline-block;
-      padding: 10px;
-      padding-right: 25px;
-      padding-left: 25px;
     }
     .logo{
       width:100%;
-    }
-    .navBar{
-      width:100%;
-      height: 44px;
     }
 }

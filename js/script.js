@@ -1,6 +1,15 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
+// Facebook widget
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+//-------------------
 // Parallax
 $(window).scroll(function () {
 	"use strict";
@@ -41,3 +50,38 @@ $(document).ready(function () {
         } // End if
     });
 });
+// Burger menu animated
+function animateMenu(x) {
+    "use strict";
+		if ($(window).width()>1080){
+			return;
+		}
+		if (document.getElementById("mySidenav").style.width == "40%") {
+			closeNav(x);
+		}
+		else{
+			openNav(x);
+		}
+}
+function fromContent(x){
+	if(document.getElementById("mySidenav").style.width == "40%"){
+		animateMenu(x);
+	}
+	else {
+		return;
+	}
+}
+function changeMenu(x){
+	x.classList.toggle("change");
+}
+// Side menu for Mobile
+function openNav(x) {
+		changeMenu(x);
+    document.getElementById("mySidenav").style.width = "40%";
+}
+/* Set the width of the side navigation to 0 */
+function closeNav(x) {
+		changeMenu(x);
+    document.getElementById("mySidenav").style.width = "0px";
+}
+//-----------------

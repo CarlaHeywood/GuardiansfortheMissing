@@ -17,7 +17,8 @@
 
 
 		<!-- StyleSheet -->
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -25,32 +26,30 @@
 
 	</head>
     <header>
-        <div class="navBar">
-					<div class="centerMobile">
-            <ul class="menuOptions">
+        <div class="bar">
+					<div class="burgermenu" id="burgermenu" onclick="animateMenu(this)">
+						<div class="line" id="line1"></div>
+						<div class="line" id="line2"></div>
+						<div class="line" id="line3"></div>
+					</div>
+          <ul id="mySidenav" class="menuOptions">
             <li class="Home"><a href="#Home">Home</a></li>
             <li class="About"><a href="#About">About</a></li>
             <li class="Contact"><a href="#Contact">Contact</a></li>
             <li class="News"><a href="#Media">Media</a></li>
-            </ul>
-					</div>
+          </ul>
 				</div>
-            <div class="hero">
-				<div class="logo"></div>
-				<div class="name"><h1>Guardians for the Missing</h1></div>
-            </div>
+
     </header>
 	<body>
-		<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-        <div class="Page-Content">
-            <!-- Home Page -->
+
+        <div class="Page-Content" onclick="fromContent(getElementById('burgermenu'))">
+					<div class="hero">
+						<div class="logo"></div>
+						<div class="name"><h1>Guardians for the Missing</h1></div>
+					</div>
+					<div id="fb-root"></div>
+						<!-- Home Page -->
             <div class="page" id="Home">
                 <div class="moveDown">
 						<div class="statement">
