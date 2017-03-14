@@ -35,8 +35,12 @@ html,body,.Page-Content{
     background-image: url("https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogoMobile.png");
 =======
     background-color: white;
+<<<<<<< HEAD
     background-image: url('GuardiansfortheMissing/pics/ShieldLogo.png');
 >>>>>>> parent of c7e59e6... Update
+=======
+    background-image: url('pics/ShieldLogo.png');
+>>>>>>> parent of ee77cff... Update
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -150,10 +154,14 @@ html,body,.Page-Content{
     margin: auto;
     text-align: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogo.png');
 =======
     background-image: url('GuardiansfortheMissing/pics/ShieldLogo.png');
 >>>>>>> parent of c7e59e6... Update
+=======
+    background-image: url('pics/ShieldLogo.png');
+>>>>>>> parent of ee77cff... Update
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
