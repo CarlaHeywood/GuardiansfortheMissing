@@ -10,8 +10,6 @@ html,body,.Page-Content{
     height:25px;
     overflow: hidden;
 }
-<<<<<<< HEAD
-=======
 .navBar{
     margin: auto;
     top:0;
@@ -26,7 +24,6 @@ html,body,.Page-Content{
     -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
     -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.40);
 }
->>>>>>> parent of cd0bb8a... Color Change
 .logo{
     top:44px;
     left:0;
@@ -34,7 +31,12 @@ html,body,.Page-Content{
     margin: auto;
     position: absolute;
     height: 300px;
+<<<<<<< HEAD
     background-image: url("https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogoMobile.png");
+=======
+    background-color: white;
+    background-image: url('GuardiansfortheMissing/pics/ShieldLogo.png');
+>>>>>>> parent of c7e59e6... Update
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -147,7 +149,11 @@ html,body,.Page-Content{
     position: absolute;
     margin: auto;
     text-align: center;
+<<<<<<< HEAD
     background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogo.png');
+=======
+    background-image: url('GuardiansfortheMissing/pics/ShieldLogo.png');
+>>>>>>> parent of c7e59e6... Update
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
