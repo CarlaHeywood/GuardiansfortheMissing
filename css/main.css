@@ -28,25 +28,13 @@ html,body,.Page-Content{
     margin: auto;
     position: absolute;
     height: 300px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-image: url("https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogoMobile.png");
-=======
     background-color: white;
-<<<<<<< HEAD
-    background-image: url('GuardiansfortheMissing/pics/ShieldLogo.png');
->>>>>>> parent of c7e59e6... Update
-=======
     background-image: url('pics/ShieldLogo.png');
->>>>>>> parent of ee77cff... Update
-=======
     background-color: white;
     background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/master/ShieldLogo.png');
->>>>>>> parent of 43a7263... Update
-=======
     background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogo.png');
->>>>>>> parent of 8cbc8c4... Update
+    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -158,19 +146,10 @@ html,body,.Page-Content{
     position: absolute;
     margin: auto;
     text-align: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/pics/ShieldLogo.png');
-=======
     background-image: url('GuardiansfortheMissing/pics/ShieldLogo.png');
->>>>>>> parent of c7e59e6... Update
-=======
     background-image: url('pics/ShieldLogo.png');
->>>>>>> parent of ee77cff... Update
-=======
-    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/master/ShieldLogo.png');
->>>>>>> parent of 43a7263... Update
+    background-image: url('https://raw.githubusercontent.com/CarlaHeywood/GuardiansfortheMissing/master/ShieldLogo.png');ß
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
