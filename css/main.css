@@ -5,45 +5,50 @@ html,body,.Page-Content{
     padding:0;
 }
 .moveDown{
+    display: block;
     position:relative;
     top: 5%;
 }
 .hero{
-  position: absolute;
   margin: auto;
-  height: 350px;
+  position: absolute;
+  height: 345px;
   width: 100%;
   overflow: hidden;
+  display: list-item;
 }
 .logo{
     margin: auto;
-    height:100%;
-    width: 100%;
-    background-image: url("/pics/ShieldLogo.png");
+    position: relative;
+    height: 500px;
+    width: 550px;
+    background-image: url("/pics/ShieldLogoMobile.png");
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: contain;
+    top:125px;
 }
 .name{
     margin:auto;
     position: absolute;
     text-align: center;
     width: 80%;
-    top:140px;
+    top:60px;
     left:0;
     right:0;
     font-family: 'Anton', sans-serif;
     font-size: 75px;
 }
 #donate{
-  margin:auto;
-  width:50%;
+  margin: auto;
   font-size: 25px;
   background-color: #3498db;
   border: 3px solid black;
   color: black;
   text-align: center;
   cursor: pointer;
+  padding:0;
+  width:25%;
 }
 .CurrentEvents, .OurStatement, .ContactUs, .noFacebook, .OurMedia{
     margin: auto;
@@ -187,6 +192,9 @@ html,body,.Page-Content{
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: contain;
+    }
+    #donate{
+      width:50%;
     }
     .OurStatement{
       width:100%;
