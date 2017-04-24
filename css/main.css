@@ -4,6 +4,10 @@ html,body,.Page-Content{
     width: 100%;
     padding:0;
 }
+.moveDown{
+    position:relative;
+    top: 5%;
+}
 .hero{
   position: absolute;
   margin: auto;
@@ -17,27 +21,38 @@ html,body,.Page-Content{
     width: 100%;
     background-image: url("/pics/ShieldLogo.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
     background-size: contain;
 }
 .name{
+    margin:auto;
     position: absolute;
     text-align: center;
     width: 80%;
-    top:120px;
+    top:140px;
     left:0;
     right:0;
-    margin: 0 auto;
     font-family: 'Anton', sans-serif;
     font-size: 75px;
 }
-.CurrentEvents, .ContactUs, .noFacebook, .OurMedia{
+#donate{
+  margin:auto;
+  width:50%;
+  font-size: 25px;
+  background-color: #3498db;
+  border: 3px solid black;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+.CurrentEvents, .OurStatement, .ContactUs, .noFacebook, .OurMedia{
     margin: auto;
     height:44px;
     width:500px;
     background-color: #C6DDF0;
 }
 #Home{
+    height: 200%;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     background-color: #F4F8FC;
@@ -60,6 +75,7 @@ html,body,.Page-Content{
     width: 500px;
 }
 #Media{
+    display: none;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     background-color: #A3B5C5;
@@ -87,52 +103,80 @@ html,body,.Page-Content{
     right: 0;
 }
 .pic{
+    margin: auto;
     position: relative;
     height:250px;
     width:250px;
     background-color: grey;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-#Alison, #Donna, #Derek{
+#Alison, #Donna{
     margin: auto;
     position: relative;
     height: auto;
-    display: flex;
 }
 #Alison{
     background-color: #A3B5C5;
 }
+#alisonpic{
+  background-image: url('../pics/alison.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #Donna{
     background-color: #F4F8FC;
 }
-#Derek{
-    background-color: #A3B5C5;
+#donnapic{
+  background-image: url('../pics/donna.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#volunteers{
+  padding:10%;
+  width:100%;
+  background-color: #A3B5C5;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
 }
 .parent{
     margin: 0;
-    height:160px;
+    height: 275px;
     overflow: hidden;
 }
 .missionStatement{
-    height:160px;
-    position: absolute;
     margin: auto;
+    width: 500px;
+    height:auto;
+    position: relative;
     text-align: center;
-    background-image: url('/pics/ShieldLogo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     background-color: white;
 }
-.description{
-    padding-left:105px;
-    margin:0 auto;
-    position:relative;
-    width:40%;
-    text-align: justify;
+#missionStatementParagraph{
+  margin: auto;
+  position: relative;
+  padding:2%;
 }
-.moveDown{
+#logoStatement{
+  margin: auto;
+  margin-bottom: 5%;
+  height: 100px;
+  width: 50%;
+  background-image: url("/pics/ShieldLogoMobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.person{
+  position: relative;
+  display: flex;
+}
+.description{
+    margin: auto;
     position:relative;
-    top: 10%;
+    width:50%;
+    text-align: justify;
 }
 @media only screen and (max-width: 1080px) {
     .hero{
@@ -144,38 +188,48 @@ html,body,.Page-Content{
       background-position: bottom;
       background-size: contain;
     }
+    .OurStatement{
+      width:100%;
+    }
+    .missionStatement{
+      width:auto;
+      position: absolute;
+      text-align: center;
+      background-color: white;
+    }
+    #volunteers{
+      width:auto;
+    }
     .CurrentEvents, .ContactUs, .noFacebook, .OurMedia{
       width:100%;
     }
     .person{
+      margin:auto;
       height:auto;
-      position: absolute;
-      display: flex;
+      position:relative;
+      display:list-item;
+      padding-bottom: 1%;
     }
     .pic{
-        margin: auto;
-        position: relative;
-        height:250px;
-        width:250px;
-        background-color: white;
+      margin: auto;
+      position: relative;
+      width:80%;
+      background-color: white;
+    }
+    h2{
+      text-align: center;
     }
     .description{
-        margin: 0;
-        position: absolute;
-        width: 100%;
-        text-align: justify;
+      width: 85%;
     }
     .page{
-        margin: 0;
-        position: relative;
-        width:100%;
-        background-color: black;
-        height: auto;
-        min-height: 100%;
-        overflow-x: hidden;
-    }
-    .fb-page{
-      data-height: auto;
+      margin: 0;
+      position: relative;
+      width:100%;
+      background-color: black;
+      height: auto;
+      min-height: 100%;
+      overflow-x: hidden;
     }
     .logo{
       display: none;
