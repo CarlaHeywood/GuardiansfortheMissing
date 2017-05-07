@@ -20,20 +20,22 @@ html,body,.Page-Content{
 .logo{
     margin: auto;
     position: relative;
+    z-index: 90;
     height: 500px;
     width: 550px;
     background-image: url("/pics/ShieldLogoMobile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    top:125px;
+    top:120px;
 }
 .name{
     margin:auto;
     position: absolute;
     text-align: center;
+    z-index: 99;
     width: 80%;
-    top:60px;
+    top:85px;
     left:0;
     right:0;
     font-family: 'Anton', sans-serif;
