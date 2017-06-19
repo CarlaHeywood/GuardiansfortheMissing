@@ -7,27 +7,47 @@ html,body,.Page-Content{
 .moveDown{
     display: block;
     position:relative;
-    top: 5%;
+    top:10%;
 }
 .hero{
+  top:250px;
+  margin: auto;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background-image: url("/pics/ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .85;
+}
+.homePhotoSlide{
+    margin: auto;
+    position: absolute;
+    height: 400px;
+    width: 1000px;
+    top:200px;
+    left:0;
+    right:0;
+    background-image: url("/pics/pic1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+.textOver{
   margin: auto;
   position: absolute;
-  height: 345px;
-  width: 100%;
-  overflow: hidden;
-  display: list-item;
-}
-.logo{
-    margin: auto;
-    position: relative;
-    z-index: 90;
-    height: 500px;
-    width: 550px;
-    background-image: url("/pics/ShieldLogoMobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    top:120px;
+  text-align: center;
+  width: 850px;
+  font-family: 'Scada', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  z-index: 100;
+  top:605px;
+  left:0;
+  right:0;
+  color: black;
 }
 .name{
     margin:auto;
@@ -38,7 +58,7 @@ html,body,.Page-Content{
     top:85px;
     left:0;
     right:0;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 75px;
 }
 #donate{
@@ -61,17 +81,17 @@ html,body,.Page-Content{
 }
 #Home{
     height: 200%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    background-color: #F4F8FC;
+    background-color: #f9f1e0;
 }
 #About{
     height: auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #F4F8FC;
 }
 #Contact{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     background-color: #F4F8FC;
     height:auto;
@@ -84,7 +104,7 @@ html,body,.Page-Content{
 }
 #Media{
     display: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     background-color: #A3B5C5;
 }
@@ -102,11 +122,11 @@ html,body,.Page-Content{
     position:relative;
 }
 .page{
-    top:344px;
-    width:70%;
-    height:100vh;
     margin: auto;
     position: relative;
+    top:300px;
+    width:1000px;
+    height:100%;
     left: 0;
     right: 0;
 }
