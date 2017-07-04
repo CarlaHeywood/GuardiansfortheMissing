@@ -2,38 +2,59 @@ html,body,.Page-Content{
     margin: 0;
     height: auto;
     width: 100%;
-    padding:0;
+    padding: 0;
+}
+.donate{
+  margin: 0;
+  top: 52%;
+  float: left;
+  position: fixed;
+  background-color: #2980b9;
+  color: white;
+  padding-left: 10px;
+  padding-right: 4px;
+  font-size: 25px;
 }
 .moveDown{
     display: block;
-    position:relative;
-    top:10%;
+    position: relative;
+    top: 10%;
+    padding: 3%;
 }
 .hero{
-  top:250px;
+  top: 225px;
   margin: auto;
-  position: relative;
-  height: 300px;
+  position: fixed;
+  height: 400px;
   width: 100%;
-  background-image: url("/pics/ocean.jpg");
+  background-color: #C6DDF0;
+  /* background-image: url("/pics/ocean.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: .85;
+}
+.heroMiddle{
+  position: fixed;
+  margin: auto;
+  width: 1000px;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-color: #F4F8FC;
 }
 .homePhotoSlide{
     margin: auto;
-    position: absolute;
-    height: 400px;
+    position: relative;
+    height: 450px;
     width: 1000px;
-    top:200px;
-    left:0;
-    right:0;
-    background-image: url("/pics/pic1.jpg");
+    top: 200px;
+    left: 0;
+    right: 0;
+    background-image: url("/pics/HomeSlider/Pic1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .textOver{
   margin: auto;
@@ -42,29 +63,29 @@ html,body,.Page-Content{
   width: 850px;
   font-family: 'Scada', sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 30px;
   z-index: 100;
-  top:605px;
-  left:0;
-  right:0;
+  top: 605px;
+  left: 0;
+  right: 0;
   color: black;
 }
 .name{
-    margin:auto;
+    margin: auto;
     position: absolute;
     text-align: center;
     z-index: 99;
     width: 80%;
-    top:85px;
-    left:0;
-    right:0;
+    top: 85px;
+    left: 0;
+    right: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 75px;
 }
 #donate{
-  padding:0;
+  padding: 0;
   margin: auto;
-  padding-left:10%;
+  padding-left: 10%;
   padding-right: 10%;
   font-size: 25px;
   background-color: #3498db;
@@ -73,22 +94,54 @@ html,body,.Page-Content{
   text-align: center;
   cursor: pointer;
 }
-.CurrentEvents, .OurStatement, .ContactUs, .noFacebook, .OurMedia{
+.OurStatement, .CurrentEvents, .Videos, .ContactUs, .noFacebook, .OurMedia{
     margin: auto;
-    height:44px;
-    width:500px;
+    height: 44px;
+    width: 500px;
     background-color: #C6DDF0;
+    text-align: center;
+}
+.titleBox{
+  margin: 0;
+  position: relative;
+  height: 44px;
+  width: 450px;
+  text-align: center;
+  background-color: #C6DDF0;
+}
+.fb-page{
+    position: relative;
+}
+.OurStatement, .CurrentEvents, .Videos{
+  width: auto;
+}
+.missionStatement{
+    margin: auto;
+    width: 450px;
+    height: auto;
+    position: relative;
+    text-align: center;
+    background-color: white;
+}
+#moveDownHome{
+  top:0;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
 }
 #Home{
-    height: 200%;
+    height: 600px;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    background-color: #f9f1e0;
+    background-color: #F4F8FC;
+    padding-bottom: 3%;
 }
 #About{
     height: auto;
     font-family: 'Montserrat', sans-serif;
     background-color: #F4F8FC;
+}
+#moveDownAbout{
+  padding: 0;
 }
 #Contact{
     font-family: 'Montserrat', sans-serif;
@@ -98,93 +151,132 @@ html,body,.Page-Content{
 }
 .contactForm{
     background-color: white;
-    margin:auto;
+    margin: auto;
     height: 500px;
     width: 500px;
 }
 #Media{
-    display: none;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    background-color: #A3B5C5;
+    background-color: #F4F8FC;
 }
 .photoAlbum{
   margin: auto;
   background-color: white;
-  height:500px;
-  width:500px;
+  height: 500px;
+  width: 100%;
 }
-.statement{
-    padding:25px;
-    font-size: 10px;
+.OurMedia{
+  width: 100%;
 }
-.fb-page{
-    position:relative;
+#player{
+  height: 100px;
 }
 .page{
     margin: auto;
     position: relative;
-    top:300px;
-    width:1000px;
-    height:100%;
+    top: 300px;
+    width: 1000px;
+    height: 100%;
     left: 0;
     right: 0;
 }
-.pic{
-    margin: auto;
-    position: relative;
-    height:250px;
-    width:250px;
-    background-color: grey;
-    margin-top: 5%;
-    margin-bottom: 5%;
+#Photo{
+  height: 400px;
+  width: 100%;
+  background-image: url('../pics/HomeSlider/Pic3.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+.photoText, #volunteers{
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  background-color: #A3B5C5;
+  padding: 2%;
+  width: 70%;
+}
+.volunteerColumns{
+  top:0;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
 }
 #Alison, #Donna{
     margin: auto;
     position: relative;
     height: auto;
 }
+.aliDonnaDescriptions{
+  top:0;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
 #Alison{
     background-color: #A3B5C5;
 }
-#alisonpic{
-  background-image: url('../pics/alison.jpg');
+#alisonpic, #donnapic, #giannipic, #lindsaypic, #carlapic, #nataliepic,
+#perrypic, #toddpic, #sandipic{
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  border-radius: 100%;
 }
 #Donna{
     background-color: #F4F8FC;
 }
+#alisonpic{
+  background-image: url('../pics/alison.jpg');
+}
 #donnapic{
-  background-image: url('../pics/donna.jpeg');
+  background-image: url('../pics/donna.jpg');
+}
+#sandipic{
+  background-image: url('../pics/Volunteers/sandi.jpeg');
+}
+#giannipic{
+  background-image: url('../pics/Volunteers/gianni.jpeg');
+}
+#toddpic{
+  background-image: url('../pics/Volunteers/todd.jpeg');
+}
+#lindsaypic{
+  background-image: url('../pics/Volunteers/lindsay.jpeg');
+}
+#nataliepic{
+  background-image: url('../pics/Volunteers/natalie.jpeg');
+}
+#perrypic{
+  background-image: url('../pics/Volunteers/perry.jpeg');
+}
+#carlapic{
+  cursor: pointer;
+  background-image: url('../pics/Volunteers/carla.png');
+}
+#Volunteers{
+  height: 400px;
+  width: 100%;
+  background-image: url('../pics/HomeSlider/Pic2.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
+  align-items: center;
 }
-#volunteers{
-  padding:10%;
-  width:100%;
-  background-color: #A3B5C5;
-  cursor: pointer;
-  text-align: center;
-  font-size: 30px;
+.carlaLink{
+  text-decoration: underline;
+  color: blue;
 }
 .parent{
     margin: 0;
     height: 275px;
     overflow: hidden;
 }
-.missionStatement{
-    margin: auto;
-    width: 500px;
-    height:auto;
-    position: relative;
-    text-align: center;
-    background-color: white;
-}
 #missionStatementParagraph{
   margin: auto;
   position: relative;
-  padding:2%;
+  padding: 2%;
 }
 #logoStatement{
   margin: auto;
@@ -197,54 +289,132 @@ html,body,.Page-Content{
   background-size: contain;
 }
 .person{
+  height:auto;
   position: relative;
   display: flex;
 }
+.pic{
+    margin: auto;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-color: grey;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    break-after: avoid-column;
+}
+#alisonpic, #donnapic{
+  height:350px;
+  width:350px;
+}
+.descriptionAliDonna{
+  margin: auto;
+  width: 75%;
+  position: relative;
+  text-align: justify;
+  break-after: column;
+}
 .description{
     margin: auto;
-    position:relative;
-    width:50%;
+    width: 75%;
+    position: relative;
     text-align: justify;
+    break-after: column;
 }
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1000px) {
+    .Page-Content{
+      overflow-x: hidden;
+    }
+    .homePhotoSlide{
+      margin: auto;
+      overflow: hidden;
+      width:auto;
+    }
+    .fb-page{
+      margin: auto;
+    }
+    #Home{
+      height: auto;
+    }
+    #Photo{
+      width: auto;
+      background-position: center;
+    }
+    .photoText{
+      margin: auto;
+      position: relative;
+      top: 125px;
+    }
+    .descriptionAliDonna{
+      width: 85%;
+    }
+    #Volunteers{
+      width: auto;
+      background-position: center;
+    }
+    #volunteers{
+      margin: auto;
+      top: 125px;
+    }
+    .volunteerColumns{
+      column-count: 1;
+    }
+    .aliDonnaDescriptions{
+      column-count: 1;
+    }
+    .moveDown{
+      padding: 0;
+    }
+    #moveDownHome{
+      column-count: 1;
+      height:auto;
+    }
+    .statement{
+      width: auto;
+    }
+    .donate{
+      margin: 0;
+      position: absolute;
+      left:0;
+    }
     .hero{
       position: fixed;
-      top:8%;
-      height:40%;
+      top: 8%;
+      height: 40%;
       background-image: url("/pics/ShieldLogoMobile.png");
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: contain;
     }
     #donate{
-      width:50%;
+      width: 50%;
     }
     .OurStatement{
-      width:100%;
+      width: 100%;
     }
     .missionStatement{
-      width:auto;
+      width: auto;
       position: absolute;
       text-align: center;
       background-color: white;
     }
     #volunteers{
-      width:auto;
+      width: auto;
     }
     .CurrentEvents, .ContactUs, .noFacebook, .OurMedia{
-      width:100%;
+      width: 100%;
     }
     .person{
-      margin:auto;
-      height:auto;
-      position:relative;
-      display:list-item;
+      margin: auto;
+      height: auto;
+      position: relative;
+      display: list-item;
       padding-bottom: 1%;
     }
     .pic{
       margin: auto;
       position: relative;
-      width:80%;
+      width: 80%;
       background-color: white;
     }
     h2{
@@ -256,11 +426,11 @@ html,body,.Page-Content{
     .page{
       margin: 0;
       position: relative;
-      width:100%;
+      width: 100%;
       background-color: black;
       height: auto;
       min-height: 100%;
-      overflow-x: hidden;
+      overflow: hidden;
     }
     .logo{
       display: none;
