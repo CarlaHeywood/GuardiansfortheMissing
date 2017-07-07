@@ -1,8 +1,8 @@
 html,body,.Page-Content{
-    margin: 0;
-    height: auto;
-    width: 100%;
-    padding: 0;
+  margin: 0;
+  height: auto;
+  width: 100%;
+  padding: 0;
 }
 .donate{
   margin: 0;
@@ -16,10 +16,10 @@ html,body,.Page-Content{
   font-size: 25px;
 }
 .moveDown{
-    display: block;
-    position: relative;
-    top: 10%;
-    padding: 3%;
+  display: block;
+  position: relative;
+  top: 10%;
+  padding: 3%;
 }
 .hero{
   top: 225px;
@@ -43,44 +43,44 @@ html,body,.Page-Content{
   background-color: #F4F8FC;
 }
 .homePhotoSlide{
-    margin: auto;
-    position: relative;
-    height: 450px;
-    width: 1000px;
-    top: 200px;
-    left: 0;
-    right: 0;
-    background-image: url("/pics/HomeSlider/Pic1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-}
-.textOver{
   margin: auto;
-  position: absolute;
+  position: relative;
+  height: 450px;
+  width: 1000px;
+  top: 200px;
+  left: 0;
+  right: 0;
+  background-image: url("/pics/HomeSlider/Pic1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.statement{
+  margin: auto;
+  position: relative;
   text-align: center;
   width: 850px;
   font-family: 'Scada', sans-serif;
   font-weight: 400;
   font-size: 30px;
   z-index: 100;
-  top: 605px;
+  top: 250px;
   left: 0;
   right: 0;
   color: black;
 }
 .name{
-    margin: auto;
-    position: absolute;
-    text-align: center;
-    z-index: 99;
-    width: 80%;
-    top: 85px;
-    left: 0;
-    right: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 75px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+  width: 80%;
+  top: 85px;
+  left: 0;
+  right: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 75px;
 }
 #donate{
   padding: 0;
@@ -95,11 +95,11 @@ html,body,.Page-Content{
   cursor: pointer;
 }
 .OurStatement, .CurrentEvents, .Videos, .ContactUs, .noFacebook, .OurMedia{
-    margin: auto;
-    height: 44px;
-    width: 500px;
-    background-color: #C6DDF0;
-    text-align: center;
+  margin: auto;
+  height: 44px;
+  width: 500px;
+  background-color: #C6DDF0;
+  text-align: center;
 }
 .titleBox{
   margin: 0;
@@ -110,18 +110,18 @@ html,body,.Page-Content{
   background-color: #C6DDF0;
 }
 .fb-page{
-    position: relative;
+  position: relative;
 }
 .OurStatement, .CurrentEvents, .Videos{
   width: auto;
 }
 .missionStatement{
-    margin: auto;
-    width: 450px;
-    height: auto;
-    position: relative;
-    text-align: center;
-    background-color: white;
+  margin: auto;
+  width: 450px;
+  height: auto;
+  position: relative;
+  text-align: center;
+  background-color: white;
 }
 #moveDownHome{
   top:0;
@@ -130,35 +130,35 @@ html,body,.Page-Content{
   column-count: 2;
 }
 #Home{
-    height: 600px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F4F8FC;
-    padding-bottom: 3%;
+  height: 600px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F4F8FC;
+  padding-bottom: 3%;
 }
 #About{
-    height: auto;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F4F8FC;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F4F8FC;
 }
 #moveDownAbout{
   padding: 0;
 }
 #Contact{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    background-color: #F4F8FC;
-    height:auto;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #F4F8FC;
+  height:auto;
 }
 .contactForm{
-    background-color: white;
-    margin: auto;
-    height: 500px;
-    width: 500px;
+  background-color: white;
+  margin: auto;
+  height: 500px;
+  width: 500px;
 }
 #Media{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    background-color: #F4F8FC;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #F4F8FC;
 }
 .photoAlbum{
   margin: auto;
@@ -173,13 +173,13 @@ html,body,.Page-Content{
   height: 100px;
 }
 .page{
-    margin: auto;
-    position: relative;
-    top: 300px;
-    width: 1000px;
-    height: 100%;
-    left: 0;
-    right: 0;
+  margin: auto;
+  position: relative;
+  top: 300px;
+  width: 1000px;
+  height: 100%;
+  left: 0;
+  right: 0;
 }
 #Photo{
   height: 400px;
@@ -204,9 +204,9 @@ html,body,.Page-Content{
   column-count: 2;
 }
 #Alison, #Donna{
-    margin: auto;
-    position: relative;
-    height: auto;
+  margin: auto;
+  position: relative;
+  height: auto;
 }
 .aliDonnaDescriptions{
   top:0;
@@ -215,9 +215,10 @@ html,body,.Page-Content{
   column-count: 2;
 }
 #Alison{
-    background-color: #A3B5C5;
+  background-color: #A3B5C5;
 }
-#alisonpic, #donnapic, #giannipic, #lindsaypic, #carlapic, #nataliepic,
+#alisonpic, #donnapic, #giannipic,
+#lindsaypic, #carlapic, #nataliepic,
 #perrypic, #toddpic, #sandipic{
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,7 +226,7 @@ html,body,.Page-Content{
   border-radius: 100%;
 }
 #Donna{
-    background-color: #F4F8FC;
+  background-color: #F4F8FC;
 }
 #alisonpic{
   background-image: url('../pics/alison.jpg');
@@ -269,9 +270,9 @@ html,body,.Page-Content{
   color: blue;
 }
 .parent{
-    margin: 0;
-    height: 275px;
-    overflow: hidden;
+  margin: 0;
+  height: 275px;
+  overflow: hidden;
 }
 #missionStatementParagraph{
   margin: auto;
@@ -294,14 +295,14 @@ html,body,.Page-Content{
   display: flex;
 }
 .pic{
-    margin: auto;
-    position: relative;
-    height: 250px;
-    width: 250px;
-    background-color: grey;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    break-after: avoid-column;
+  margin: auto;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: grey;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  break-after: avoid-column;
 }
 #alisonpic, #donnapic{
   height:350px;
@@ -315,11 +316,11 @@ html,body,.Page-Content{
   break-after: column;
 }
 .description{
-    margin: auto;
-    width: 75%;
-    position: relative;
-    text-align: justify;
-    break-after: column;
+  margin: auto;
+  width: 75%;
+  position: relative;
+  text-align: justify;
+  break-after: column;
 }
 @media only screen and (max-width: 1000px) {
     .Page-Content{
