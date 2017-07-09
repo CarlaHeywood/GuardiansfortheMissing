@@ -58,7 +58,7 @@ a{
 .MobileLogo{
   display: none;
 }
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1000px) {
   .navBar{
     height:50px;
     width: 100%;

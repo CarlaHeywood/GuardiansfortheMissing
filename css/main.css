@@ -126,16 +126,24 @@ html,body,.Page-Content{
   background-color: white;
 }
 #moveDownHome{
-  top:0;
+  height: auto;
+  position: relative;
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
 }
+.parent{
+  width: 450px;
+  height: auto;
+}
+div{
+  break-inside: avoid;
+}
 #Home{
   height: auto;
+  top: 220px;
   font-family: 'Montserrat', sans-serif;
   background-color: #F4F8FC;
-  padding-bottom: 3%;
 }
 #About{
   height: auto;
@@ -158,6 +166,7 @@ html,body,.Page-Content{
   width: 500px;
 }
 #Media{
+  top: 220px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   background-color: #F4F8FC;
@@ -192,12 +201,14 @@ html,body,.Page-Content{
   align-items: center;
 }
 .photoText, #volunteers{
-  margin: 0;
+  margin: auto;
+  position: absolute;
   text-align: left;
   color: white;
   background-color: black;
   font-size: 50px;
   padding: 1%;
+  bottom:0;
 }
 .volunteerColumns{
   height: auto;
@@ -279,7 +290,6 @@ html,body,.Page-Content{
 }
 .parent{
   margin: 0;
-  height: 275px;
   overflow: hidden;
 }
 #missionStatementParagraph{
@@ -342,7 +352,7 @@ html,body,.Page-Content{
   break-before: avoid;
   break-inside: avoid-column;
 }
-@media only screen and (max-width: 1075px) {
+@media only screen and (max-width: 1000px) {
     .Page-Content{
       overflow-x: hidden;
       display: inline-block;
