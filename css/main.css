@@ -7,7 +7,7 @@ html,body,.Page-Content{
 .donate{
   margin: 0;
   top: 52%;
-  float: left;
+  left:0;
   position: fixed;
   background-color: #2980b9;
   color: white;
@@ -65,7 +65,7 @@ html,body,.Page-Content{
   font-weight: 400;
   font-size: 30px;
   z-index: 100;
-  top: 250px;
+  top: 220px;
   left: 0;
   right: 0;
   color: black;
@@ -94,7 +94,9 @@ html,body,.Page-Content{
   text-align: center;
   cursor: pointer;
 }
-.OurStatement, .CurrentEvents, .Videos, .ContactUs, .noFacebook, .OurMedia{
+.OurStatement, .CurrentEvents,
+.Videos, .ContactUs, .noFacebook,
+.OurMedia{
   margin: auto;
   height: 44px;
   width: 500px;
@@ -130,7 +132,7 @@ html,body,.Page-Content{
   column-count: 2;
 }
 #Home{
-  height: 600px;
+  height: auto;
   font-family: 'Montserrat', sans-serif;
   background-color: #F4F8FC;
   padding-bottom: 3%;
@@ -190,15 +192,17 @@ html,body,.Page-Content{
   align-items: center;
 }
 .photoText, #volunteers{
-  margin: auto;
-  text-align: center;
+  margin: 0;
+  text-align: left;
+  color: white;
+  background-color: black;
   font-size: 50px;
-  background-color: #A3B5C5;
-  padding: 2%;
-  width: 70%;
+  padding: 1%;
 }
 .volunteerColumns{
-  top:0;
+  height: auto;
+  position: relative;
+  top: 20px;
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
@@ -209,7 +213,9 @@ html,body,.Page-Content{
   height: auto;
 }
 .aliDonnaDescriptions{
-  top:0;
+  height: auto;
+  position: relative;
+  top: 20px;
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
@@ -219,7 +225,7 @@ html,body,.Page-Content{
 }
 #alisonpic, #donnapic, #giannipic,
 #lindsaypic, #carlapic, #nataliepic,
-#perrypic, #toddpic, #sandipic{
+#perrypic, #nickpic, #sandipic{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -240,8 +246,8 @@ html,body,.Page-Content{
 #giannipic{
   background-image: url('../pics/Volunteers/gianni.jpeg');
 }
-#toddpic{
-  background-image: url('../pics/Volunteers/todd.jpeg');
+#nickpic{
+  background-image: url('../pics/Volunteers/nick.jpg');
 }
 #lindsaypic{
   background-image: url('../pics/Volunteers/lindsay.jpeg');
@@ -257,6 +263,8 @@ html,body,.Page-Content{
   background-image: url('../pics/Volunteers/carla.png');
 }
 #Volunteers{
+  position: relative;
+  padding: 0;
   height: 400px;
   width: 100%;
   background-image: url('../pics/HomeSlider/Pic2.jpeg');
@@ -290,29 +298,39 @@ html,body,.Page-Content{
   background-size: contain;
 }
 .person{
-  height:auto;
+  height: auto;
   position: relative;
-  display: flex;
+  display: inline-block;
+  break-after: avoid-column;
 }
 .pic{
   margin: auto;
   position: relative;
-  height: 250px;
-  width: 250px;
+  width: 40%;
   background-color: grey;
   margin-top: 5%;
   margin-bottom: 5%;
-  break-after: avoid-column;
+  break-inside: avoid;
+}
+.pic:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 #alisonpic, #donnapic{
-  height:350px;
-  width:350px;
+  width: 60%;
+}
+#alisonpic:after, #donnapic:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 .descriptionAliDonna{
   margin: auto;
   width: 75%;
   position: relative;
   text-align: justify;
+  padding-bottom: 20px;
   break-after: column;
 }
 .description{
@@ -320,63 +338,114 @@ html,body,.Page-Content{
   width: 75%;
   position: relative;
   text-align: justify;
-  break-after: column;
+  break-after: always;
+  break-before: avoid;
+  break-inside: avoid-column;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1075px) {
     .Page-Content{
       overflow-x: hidden;
+      display: inline-block;
     }
-    .homePhotoSlide{
-      margin: auto;
-      overflow: hidden;
-      width:auto;
-    }
-    .fb-page{
-      margin: auto;
+    .moveDown{
+      background-color: white;
     }
     #Home{
+      top:315px;
+      display: inline-block;
+      margin: auto;
+    }
+    .homePhotoSlide{
+      display: none;
+      margin: auto;
+      overflow: hidden;
+      width:100%;
+      top: 50px;
+    }
+    .hero{
+      margin: auto;
+      position: absolute;
+      top:0;
+      background-color: white;
+      background-position: top;
+    }
+    .statement{
+      position: relative;
+      width: 100%;
+      height: auto;
+      background-color: white;
+      font-size: 20px;
+      top: 315px;
+      padding: 15px;
+    }
+    .heroMiddle{
+      display: none;
+    }
+    .fb-page{
+      position: relative;
+    }
+    .parent{
+      margin: auto;
+      position: relative;
+      width: 450px;
+      height: auto;
+    }
+    .aliDonnaDescriptions, .volunteerColumns{
+      display: inline;
+      column-count: 1;
+    }
+    #alisonpic, #donnapic{
+      width: 60%;
+    }
+    #giannipic, #lindsaypic, #carlapic, #nataliepic,
+    #perrypic, #nickpic, #sandipic{
+      width: 40%;
+    }
+    #alisonpic:after, #donnapic:after, .pic:after{
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+    #Home{
+      display: inline;
       height: auto;
     }
     #Photo{
       width: auto;
-      background-position: center;
+      background-position: top;
     }
     .photoText{
-      margin: auto;
       position: relative;
-      top: 125px;
+      top: 250px;
     }
     .descriptionAliDonna{
       width: 85%;
     }
     #Volunteers{
       width: auto;
-      background-position: center;
+      background-position: top;
     }
     #volunteers{
+      position: relative;
       margin: auto;
-      top: 125px;
-    }
-    .volunteerColumns{
-      column-count: 1;
-    }
-    .aliDonnaDescriptions{
-      column-count: 1;
+      top:300px;
     }
     .moveDown{
       padding: 0;
     }
     #moveDownHome{
       column-count: 1;
-      height:auto;
+      height: auto;
     }
     .statement{
       width: auto;
+      z-index: 99;
     }
     .donate{
       margin: 0;
       position: absolute;
       left:0;
+      top: 50px;
     }
     .hero{
       position: fixed;
@@ -391,11 +460,14 @@ html,body,.Page-Content{
       width: 50%;
     }
     .OurStatement{
+      margin: auto;
+      position: relative;
       width: 100%;
     }
     .missionStatement{
-      width: auto;
-      position: absolute;
+      width: 100%;
+      height: auto;
+      position: relative;
       text-align: center;
       background-color: white;
     }
@@ -403,6 +475,9 @@ html,body,.Page-Content{
       width: auto;
     }
     .CurrentEvents, .ContactUs, .noFacebook, .OurMedia{
+      width: 100%;
+    }
+    .titleBox{
       width: 100%;
     }
     .person{

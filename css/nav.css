@@ -52,9 +52,15 @@ a{
 .Donate{
   text-decoration: underline;
 }
+.Guardians{
+  display: none;
+}
+.MobileLogo{
+  display: none;
+}
 @media only screen and (max-width: 1080px) {
   .navBar{
-    height:5%;
+    height:50px;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -62,11 +68,104 @@ a{
     text-align: center;
     display: inline-block;
   }
+  .Guardians{
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+  .Logo{
+    margin: 0;
+    z-index: 98;
+    position: absolute;
+    background-image: url("/pics/tabIcon.png");
+    background-position: right;
+    top: 8%;
+    width: 97%;
+    height: 44px;
+    margin-right: 100%;
+  }
   .menuOptions{
-      left:0;
-      right:0;
+      margin: auto;
       z-index: 100;
-      width: 100%;
       padding-top: .5%;
+  }
+  a{
+		text-decoration: none;
+		font-size: 36px;
+    color: black;
+	}
+  li{
+    z-index: 100;
+    top: 10%;
+    padding-top: 50px;
+		list-style: none;
+		text-align: center;
+    width: 100%;
+	}
+  .burgermenu{
+		position: relative;
+		z-index: 100;
+		width: 40px;
+		height: 20px;
+    margin-top: 15px;
+  	margin-left: 15px;
+		cursor: pointer;
+		right: 0;
+    border: none;
+		transition: .3s;
+	}
+	.burgermenu > div{
+    z-index: 100;
+		background-color: black;
+		height: 3px;
+		width: 40px;
+		margin-bottom: 5px;
+    transition: .5s;
+	}
+  .LogoSpace{
+    display: none;
+  }
+  .MobileLogo{
+    margin-top: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url("/pics/ShieldLogoMobile.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+	#mySidenav{
+    z-index: 99;
+		height: 0;
+		width: 100%;
+    top: 0;
+    left:0;
+		position: fixed;
+		background-color: white;
+	  overflow: hidden;
+		padding: 0;
+    opacity: .98;
+		transition: .5s;
+	}
+  /* Menu button animation */
+  .change .line1{
+      -webkit-transform: rotate(-45deg) translate(-10px,6px);
+      transform:rotate(-45deg) translate(-10px,6px);
+  }
+  .change .line2{
+      opacity: 0;
+  }
+  .change .line3{
+      -webkit-transform: rotate(45deg) translate(-5px,-2px);
+      transform:rotate(45deg) translate(-5px,-2px);
+  }
+  /*---------------*/
+  .carlaLink{
+    font-size: 18px;
   }
 }

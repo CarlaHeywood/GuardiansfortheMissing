@@ -1,6 +1,42 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
+// Burger menu animated
+function animateMenu(x) {
+   "use strict";
+		if ($(window).width()>1080){
+			return;
+		}
+		if (document.getElementById("mySidenav").style.height == "100%") {
+			closeNav(x);
+		}
+		else{
+			openNav(x);
+		}
+}
+function fromContent(x){
+	if(document.getElementById("mySidenav").style.height == "100%"){
+		animateMenu(x);
+	}
+	else {
+		return;
+	}
+}
+function changeMenu(x){
+	x.classList.toggle("change");
+}
+// Side menu for Mobile
+function openNav(x) {
+		changeMenu(x);
+   document.getElementById("mySidenav").style.height = "100%";
+}
+/* Set the width of the side navigation to 0 */
+function closeNav(x) {
+	changeMenu(x);
+  document.getElementById("mySidenav").style.height = "0%";
+}
+//-----------------
+
 // Facebook widget
 (function(d, s, id) {
 var js, fjs = d.getElementsByTagName(s)[0];
@@ -50,38 +86,3 @@ $(document).ready(function () {
         } // End if
     });
 });
-// Burger menu animated
-function animateMenu(x) {
-    "use strict";
-		if ($(window).width()>1080){
-			return;
-		}
-		if (document.getElementById("mySidenav").style.width == "40%") {
-			closeNav(x);
-		}
-		else{
-			openNav(x);
-		}
-}
-function fromContent(x){
-	if(document.getElementById("mySidenav").style.width == "40%"){
-		animateMenu(x);
-	}
-	else {
-		return;
-	}
-}
-function changeMenu(x){
-	x.classList.toggle("change");
-}
-// Side menu for Mobile
-function openNav(x) {
-		changeMenu(x);
-    document.getElementById("mySidenav").style.width = "40%";
-}
-/* Set the width of the side navigation to 0 */
-function closeNav(x) {
-		changeMenu(x);
-    document.getElementById("mySidenav").style.width = "0px";
-}
-//-----------------

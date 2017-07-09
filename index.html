@@ -17,7 +17,7 @@
 		<script src='https://content.jwplatform.com/libraries/MiXO7UsH.js'></script>
 
 		<!-- File MUST appear after -->
-		<script src="js/script.js"></script>
+		<script src="/js/script.js"></script>
 		<!-- StyleSheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
@@ -27,14 +27,20 @@
 	</head>
     <header>
         <div class="navBar">
-            <ul class="menuOptions">
-            <li class="Home"><a href="/">Home</a></li>
-						<li class="Media"><a href="#Media">Media</a></li>
-						<li class="LogoSpace"><a href="/"></a></li>
-            <li class="About"><a href="#About">About</a></li>
-            <li class="Contact"><a href="#Contact">Contact</a></li>
-            <!--li class="News"><a href="#Media">Media</a></li-->
-            </ul>
+						<div class="burgermenu" id="burgermenu" onclick="animateMenu(this)">
+							<div class="line1"></div>
+							<div class="line2"></div>
+							<div class="line3"></div>
+						</div>
+						<h2 class="Guardians">Guardians for the Missing</h2>
+            <ul id="mySidenav" class="menuOptions">
+	            <li class="Home"><a onclick="animateMenu(getElementById('burgermenu'))" href="/">Home</a></li>
+							<li class="Media"><a onclick="animateMenu(getElementById('burgermenu'))" href="#Media">Media</a></li>
+							<li class="LogoSpace"><a onclick="animateMenu(getElementById('burgermenu'))" href="/"></a></li>
+	            <li class="About"><a onclick="animateMenu(getElementById('burgermenu'))" href="#About">About</a></li>
+	            <li class="Contact"><a onclick="animateMenu(getElementById('burgermenu'))" href="#Contact">Contact</a></li>
+							<li class="MobileLogo"></li>
+						</ul>
 						<div class="Logo" href="/"></div>
 						<a class="donate" href="https://www.gofundme.com/guardiansftm">DONATE</a>
 					</div>
@@ -60,10 +66,11 @@
             <div class="page" id="Home">
                 <div class="moveDown" id="moveDownHome">
 											<div class="titleBox">
-			                	<h1 class="CurrentEvents">Current Events:</h1>
+			                	<h1 class="CurrentEvents">Current Events</h1>
 											</div>
-
-											<div class="fb-page" data-href="https://www.facebook.com/guardiansforthemissing" data-tabs="timeline" data-small-header="true" data-width="450px" data-height="500px" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/guardiansforthemissing" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/guardiansforthemissing">Guardians for the Missing</a></blockquote></div>
+											<div class="parent">
+												<div class="fb-page" data-href="https://www.facebook.com/guardiansforthemissing" data-tabs="timeline" data-small-header="true" data-width="450px" data-height="500px" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/guardiansforthemissing" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/guardiansforthemissing">Guardians for the Missing</a></blockquote></div>
+											</div>
 											<br><br>
 											<div class="missionStatement">
 													<h1 class="OurStatement">Our Mission Statement</h1>
@@ -85,7 +92,14 @@
 											 </script>
 								</div>
             </div>
-
+						<!-- Media Page -->
+						<div class="page" id="Media">
+							<div class="moveDown">
+									<h1 class="OurMedia">Photos</h1>
+									<!-- SnapWidget -->
+									<iframe href="https://www.instagram.com/guardiansforthemissing/" src="https://snapwidget.com/embed/404497" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:940px; height:200px"></iframe>
+							</div>
+						</div>
             <!-- About Page -->
             <div class="page" id="About">
 							<div class="moveDown" id="moveDownAbout">
@@ -119,8 +133,8 @@
 													<h1 id="volunteers">Volunteers</h1>
 												</div>
 												<div class="volunteerColumns">
-													<div class="pic" id="sandipic"></div>
 													<div class="person" id="sandi">
+															<div class="pic" id="sandipic"></div>
 															<div class="description">
 																<h2 id="name">Sandi Blouin</h2>
 																<p>Achieved a Bachelor's degree in Criminal Justice form the University of South Florida;
@@ -128,8 +142,8 @@
 																	assitant for an insurance defence firm.</p>
 															</div>
 													</div>
-													<div class="pic" id="giannipic"></div>
 													<div class="person" id="gianni">
+														<div class="pic" id="giannipic"></div>
 														<div class="description">
 															<h2 id="name">Gianni Valentino</h2>
 															<p>Owner of Flat Line Counter Surveillance Intelligence: Corporate espionage prevention and
@@ -138,30 +152,31 @@
 																surveillence, executive protection, and fraud investigations.</p>
 														</div>
 													</div>
-													<div class="pic" id="toddpic"></div>
-													<div class="person" id="todd">
+													<div class="person" id="nick">
+														<div class="pic" id="nickpic"></div>
 														<div class="description">
-															<h2 id="name">Todd Mathis</h2>
-															<p>Rescue diver search: Owner of Atlantic Bail Bonds, military Corrections Officer, and recovery certified.</p>
+															<h2 id="name">Nick Calabria</h2>
+															<p>Associates in High Honors degree from Broward College. Currently attending Florida Atlantic University,
+															to pursue a Bachelor's Degree in Criminal Law</p>
 														</div>
 													</div>
-													<div class="pic" id="lindsaypic"></div>
 													<div class="person" id="lindsay">
+														<div class="pic" id="lindsaypic"></div>
 														<div class="description">
 															<h2 id="name">Lindsay Mathis</h2>
 															<p>Search and recovery diver certified, advanced open water diver, and Nitrox driver and rescue certified.</p>
 														</div>
 													</div>
-													<div class="pic" id="nataliepic"></div>
 													<div class="person" id="natalie">
+														<div class="pic" id="nataliepic"></div>
 														<div class="description">
 															<h2 id="name">Natalie Viton</h2>
 															<p>Reserve Police Officer Homestead PD, advanced open water Search Resuce and Recovery Diver, Associate degree
 																in Computer Information Systems, Working on Bachelor's degree in Criminal Justice and Psychology.</p>
 														</div>
 													</div>
-													<div class="pic" id="perrypic"></div>
 													<div class="person" id="perry">
+														<div class="pic" id="perrypic"></div>
 														<div class="description">
 															<h2 id="name">Perry</h2>
 															<p>Certificate for Open Water Ocean South Florida 06/19/2010. Advance open water training 04/20/2011/ Saftey
@@ -169,8 +184,8 @@
 																Helping someone makes it all worthwhile!"</p>
 														</div>
 													</div>
-													<div class="pic" href="carlaheywood.com" id="carlapic"></div>
 													<div class="person" id="carla">
+														<div class="pic" href="carlaheywood.com" id="carlapic"></div>
 														<div class="description">
 															<h2 id="name">Carla Heywood</h2>
 															<p>Currently working on a Bachelor's Degree in Math and Computer Science at the University of California, San diego,
@@ -180,18 +195,10 @@
 															</p>
 														</div>
 													</div>
-													<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 												</div>
 							</div>
             </div>
-						<!-- Media Page -->
-            <div class="page" id="Media">
-							<div class="moveDown">
-            			<h1 class="OurMedia">Photos</h1>
-									<!-- SnapWidget -->
-									<iframe href="https://www.instagram.com/guardiansforthemissing/" src="https://snapwidget.com/embed/404497" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:940px; height:200px"></iframe>
-							</div>
-						</div>
             <!-- Contact Page -->
             <div class="page" id="Contact">
                 <div class="moveDown">
